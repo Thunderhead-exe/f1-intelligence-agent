@@ -1,0 +1,44 @@
+---
+config:
+  flowchart:
+    curve: linear
+---
+graph TD;
+	__start__([<p>__start__</p>]):::first
+	load_data_node(load_data_node)
+	profile_data_node(profile_data_node)
+	feature_engineering_node(feature_engineering_node)
+	ml_analysis_node(ml_analysis_node)
+	telemetry_analysis_node(telemetry_analysis_node)
+	lap_visual_interpreter_node(lap_visual_interpreter_node)
+	model_visual_interpreter_node(model_visual_interpreter_node)
+	telemetry_visual_interpreter_node(telemetry_visual_interpreter_node)
+	insight_interpretation_node(insight_interpretation_node)
+	visual_context_join_node(visual_context_join_node)
+	context_retrieval_node(context_retrieval_node)
+	web_context_node(web_context_node)
+	report_generation_node(report_generation_node)
+	memory_proposal_node(memory_proposal_node)
+	__end__([<p>__end__</p>]):::last
+	__start__ --> load_data_node;
+	context_retrieval_node -. &nbsp;skip&nbsp; .-> report_generation_node;
+	context_retrieval_node -. &nbsp;web&nbsp; .-> web_context_node;
+	feature_engineering_node --> ml_analysis_node;
+	insight_interpretation_node --> visual_context_join_node;
+	lap_visual_interpreter_node --> visual_context_join_node;
+	load_data_node --> profile_data_node;
+	ml_analysis_node --> insight_interpretation_node;
+	ml_analysis_node --> lap_visual_interpreter_node;
+	ml_analysis_node --> model_visual_interpreter_node;
+	ml_analysis_node --> telemetry_analysis_node;
+	model_visual_interpreter_node --> visual_context_join_node;
+	profile_data_node --> feature_engineering_node;
+	report_generation_node --> memory_proposal_node;
+	telemetry_analysis_node --> telemetry_visual_interpreter_node;
+	telemetry_visual_interpreter_node --> visual_context_join_node;
+	visual_context_join_node --> context_retrieval_node;
+	web_context_node --> report_generation_node;
+	memory_proposal_node --> __end__;
+	classDef default fill:#f2f0ff,line-height:1.2
+	classDef first fill-opacity:0
+	classDef last fill:#bfb6fc
