@@ -1,5 +1,7 @@
 # f1-intelligence-agent
 
+![banne](docs/banners/banner-2.png)
+
 Agentic Formula 1 telemetry intelligence app built with FastF1, pandas, scikit-learn, LangGraph, Chroma, OpenAI, Plotly, and Gradio.
 
 The app loads real F1 sessions, engineers lap and telemetry features, detects unusual driver/lap patterns, separates individual anomalies from session-wide regime events, interprets plots with deterministic visual agents, retrieves local F1 knowledge, generates a cautious analyst report, and supports human-approved memory.
