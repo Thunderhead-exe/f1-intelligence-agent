@@ -37,3 +37,13 @@ Open:
 ```text
 http://127.0.0.1:7860/
 ```
+
+## Screenshots
+
+![Screenshot-1](docs/screenshots/Screenshot%20-1.png)
+
+![Screenshot-2](docs/screenshots/Screenshot%20-2.png)
+
+![Screenshot-3](docs/screenshots/Screenshot%20-3.png)
+
+![Screenshot-4](docs/screenshots/Screenshot%20-4.png)
