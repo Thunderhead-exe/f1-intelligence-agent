@@ -1,6 +1,6 @@
 # f1-intelligence-agent
 
-![banne](docs/banners/banner-2.png)
+![banne](docs/banners/banner.JPG)
 
 Agentic Formula 1 telemetry intelligence app built with FastF1, pandas, scikit-learn, LangGraph, Chroma, OpenAI, Plotly, and Gradio.
 
